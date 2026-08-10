@@ -26,6 +26,9 @@ Las URLs y ramas se configuran en [`config/repos.mjs`](./config/repos.mjs).
 - Expo Go si se trabaja con la aplicacion movil.
 - Acceso a los servicios requeridos por el backend, como Supabase.
 
+Si todavía no tienes configurado GitHub por SSH, sigue la [guía de acceso SSH
+a GitHub](./docs/acceso-ssh-github.md#1-comprobar-si-ya-existe-una-clave).
+
 ## Primera instalacion
 
 Clonar solamente este repositorio:
