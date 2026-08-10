@@ -1,0 +1,14 @@
+.workspace/
+# Copias antiguas que existian antes de usar .workspace/.
+/foco.admin/
+/foco.app/
+/foco.backend/
+/foco.frontend/
+/foco.landing/
+/mente.admin/
+/mente.landing/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
