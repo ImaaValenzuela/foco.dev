@@ -2,26 +2,26 @@ export const repositories = [
   {
     name: "foco.backend",
     url: "git@github.com:ImaaValenzuela/foco.backend.git",
-    branch: "develop"
+    branch: "main"
   },
   {
     name: "foco.frontend",
     url: "git@github.com:ImaaValenzuela/foco.frontend.git",
-    branch: "develop"
+    branch: "main"
   },
   {
     name: "foco.landing",
-    url: "git@github.com:ImaaValenzuela/foco.landing.git",
-    branch: "develop"
+    url: "git@github.com:ImaaValenzuela/mente.landing.git",
+    branch: "main"
   },
   {
     name: "foco.app",
     url: "git@github.com:ImaaValenzuela/foco.app.git",
-    branch: "develop"
+    branch: "main"
   },
   {
     name: "foco.admin",
-    url: "git@github.com:ImaaValenzuela/foco.admin.git",
-    branch: "develop"
+    url: "git@github.com:ImaaValenzuela/mente.admin.git",
+    branch: "main"
   }
 ];
