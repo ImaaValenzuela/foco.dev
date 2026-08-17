@@ -77,13 +77,6 @@ Si un proyecto no tiene un script compatible, hay que corregir su propio
 
 ## Flujo de trabajo
 
-### Estrategia de ramas
-
-- `main` es la rama de producción y despliegue.
-- `develop` es la rama de desarrollo, integración y staging.
-- Cada funcionalidad nace desde `develop` en una rama derivada (`feat/...`, `fix/...`, `chore/...`, etc.).
-- Las PRs de funcionalidad apuntan a `develop`; los releases se promueven de `develop` hacia `main`.
-
 El codigo siempre se modifica dentro del repositorio responsable, nunca en la
 raiz de `foco.dev`.
 
