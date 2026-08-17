@@ -3,6 +3,11 @@
 Esta guía configura el acceso SSH necesario para clonar y subir cambios a los
 repositorios de FOCO sin introducir la contraseña en cada operación.
 
+Desde `foco.dev`, `npm run config` automatiza los pasos locales: reutiliza la
+clave Ed25519 existente o crea una nueva, muestra la clave pública y prueba la
+conexión. La incorporación de la clave en GitHub sigue requiriendo confirmación
+manual desde [SSH and GPG keys](https://github.com/settings/keys).
+
 ## 1. Comprobar si ya existe una clave
 
 En una terminal ejecuta:

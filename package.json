@@ -4,6 +4,7 @@
   "private": true,
   "description": "Workspace de desarrollo para los repositorios de FOCO",
   "scripts": {
+    "config": "node scripts/config.mjs",
     "setup": "node scripts/setup.mjs",
     "update": "node scripts/update.mjs",
     "status": "node scripts/status.mjs",

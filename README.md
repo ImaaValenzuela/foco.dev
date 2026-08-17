@@ -26,8 +26,19 @@ Las URLs y ramas se configuran en [`config/repos.mjs`](./config/repos.mjs).
 - Expo Go si se trabaja con la aplicacion movil.
 - Acceso a los servicios requeridos por el backend, como Supabase.
 
-Si todavía no tienes configurado GitHub por SSH, sigue la [guía de acceso SSH
-a GitHub](./docs/acceso-ssh-github.md#1-comprobar-si-ya-existe-una-clave).
+## Configuración inicial
+
+Ejecuta primero:
+
+```bash
+npm run config
+```
+
+Este comando reutiliza `~/.ssh/id_ed25519` si existe o crea una clave Ed25519
+sin sobrescribir claves existentes. Luego muestra la clave pública y verifica la
+conexión con GitHub. La clave debe agregarse manualmente en [GitHub Settings >
+SSH and GPG keys](https://github.com/settings/keys), siguiendo la [guía de
+acceso SSH](./docs/acceso-ssh-github.md).
 
 ## Primera instalacion
 
@@ -36,6 +47,7 @@ Clonar solamente este repositorio:
 ```bash
 git clone git@github.com:ImaaValenzuela/foco.dev.git
 cd foco.dev
+npm run config
 npm install
 npm run setup
 ```
@@ -84,8 +96,8 @@ Ejemplo para backend:
 
 ```bash
 cd .workspace/foco.backend
-git checkout main
-git pull --ff-only origin main
+git checkout develop
+git pull --ff-only origin develop
 git checkout -b feature/login
 # realizar cambios
 git add .
